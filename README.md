@@ -1,9 +1,19 @@
 # JSBridge
 
+
+框架通信原理参考[这篇文章](https://sevody.github.io/2019/11/10/jsbridge-mechanisms/)。
+
+## Feature
 - 支持 Promise
 - 支持区分 App Platform & Version
 - 极易扩展的 bridge api
 - 接口分类参考 [html5+](http://www.html5plus.org/doc/h5p.html) 标准
+
+## Usage
+
+首先需要与 Native 端约定好每个接口支持的 APP 平台、版本号和对应的接口 id，然后在 `bridge/api` 中配置对应的接口定义。
+
+下面是实现接口的一些例子：
 
 | Module | Name | Type | Params | Description | Support |
 | --- | --- | --- | --- | --- | --- |
@@ -15,7 +25,6 @@
 | storage  | getItem | 4002 | [{String name, String value}] | 通过键(key)检索获取应用存储的值 | -- |
 | webview | open | 5001 | [{String url}] | 新建webview打开指定url | -- |
 | webview | close | 5002 | - | 关闭当前webview | -- |
-
 
 
 share.sendWithSystem(msg, successCB, errorCB);
