@@ -1,0 +1,38 @@
+{
+  "name": "jsbridge",
+  "version": "1.0.0",
+  "description": "An bridge sending messages between app native and JavaScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "babel-node test",
+    "build": "babel src --out-dir dist",
+    "prepare": "npm test && rm -rf dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sevody/JSBridge.git"
+  },
+  "keywords": [
+    "WebViewJavascriptBridge"
+  ],
+  "author": "Sevody <sevody@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-import": "^1.8.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-assets": "^1.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.1.11",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  }
+}
