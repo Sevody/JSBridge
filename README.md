@@ -16,7 +16,7 @@
 
 下面是实现接口的一些例子：
 
-| Module | Name | Type | Params | Description | Support |
+| Module | Name | ID | Params | Description | Support |
 | --- | --- | --- | --- | --- | --- |
 | share | sendWithSystem | 1001 \| 1002 \| 1003 | [{Object msg, Function successCB, Function errorCB}] | 使用系统组件发送分享 | MyAApp \| MyBApp \| MyCApp |
 | nativeUI | alert | 2001 | [{String title, String message, Function alertCB}] | 弹出系统提示对话框 | MyAApp |
