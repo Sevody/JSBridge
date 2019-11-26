@@ -3,6 +3,7 @@ const storage = {
     {
       pattern: {
         'IOS|MyCApp': ['gte', '1.0.0'],
+        'ANDROID|MyCApp': ['gte', '1.0.0'],
       },
       handler(options) {
         return this.invoke(4001, options);
@@ -13,6 +14,7 @@ const storage = {
     {
       pattern: {
         'IOS|MyCApp': ['gte', '1.0.0'],
+        'ANDROID|MyCApp': ['gte', '1.0.0'],
       },
       handler(options) {
         return this.invoke(4002, options);

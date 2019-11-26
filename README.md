@@ -17,12 +17,12 @@
 
 | Module | Name | Type | Params | Description | Support |
 | --- | --- | --- | --- | --- | --- |
-| share | sendWithSystem | 1001 | [{Object msg, Function successCB, Function errorCB}] | 使用系统组件发送分享 | -- |
-| nativeUI | alert | 2001 | [{String title, String message, Function alertCB}] | 弹出系统提示对话框 | -- |
-| event  | listen | 3001 | [{String event, Function onCallback}] | 添加App监听事件 | -- |
-| event | register | - | [String event, Function callback] | 注册供App调用的函数 | -- |
-| storage  | setItem | 4001 | [{String name, String value}] | 修改或添加键值(key-value)对数据到应用数据存储中 | -- |
-| storage  | getItem | 4002 | [{String name, String value}] | 通过键(key)检索获取应用存储的值 | -- |
+| share | sendWithSystem | 1001 \| 1002 \| 1003 | [{Object msg, Function successCB, Function errorCB}] | 使用系统组件发送分享 | MyAApp \| MyBApp \| MyCApp |
+| nativeUI | alert | 2001 | [{String title, String message, Function alertCB}] | 弹出系统提示对话框 | MyAApp |
+| event  | listen | 3001 | [{String event, Function onCallback}] | 添加App监听事件 | MyCApp2.0 |
+| event | register | - | [String event, Function callback] | 注册供App调用的函数 | MyCApp2.0 |
+| storage  | setItem | 4001 | [{String name, String value}] | 修改或添加键值(key-value)对数据到应用数据存储中 | MyCApp |
+| storage  | getItem | 4002 | [{String name, String value}] | 通过键(key)检索获取应用存储的值 | MyCApp |
 | webview | open | 5001 | [{String url}] | 新建webview打开指定url | -- |
 | webview | close | 5002 | - | 关闭当前webview | -- |
 

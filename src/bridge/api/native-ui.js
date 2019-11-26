@@ -4,8 +4,8 @@ const nativeUI = {
   setHeaderRight: [
     {
       pattern: {
-        'IOS|MyCApp': ['gte', '1.0.0'],
-        'ANDROID|MyCApp': ['gte', '1.0.0'],
+        'IOS|MyAApp': ['gte', '1.0.0'],
+        'ANDROID|MyAApp': ['gte', '1.0.0'],
       },
       handler(options) {
         const { onClick, ...params } = options;
