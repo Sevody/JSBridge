@@ -1,7 +1,8 @@
 # JSBridge
 
+基于 Hybrid App 架构的 JSBridge Javscirpt 端实现。
 
-框架通信原理参考[这篇文章](https://sevody.github.io/2019/11/10/jsbridge-mechanisms/)。
+框架底层通信原理可以参考[这篇文章](https://sevody.github.io/2019/11/10/jsbridge-mechanisms/)。
 
 ## Feature
 - 支持 Promise
